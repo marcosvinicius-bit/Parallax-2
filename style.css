@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: fonte1;
+    src: url(./fontes/Snowboarding.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000000;
+
+}
+
+.container {
+    height: 460px;
+    width: 800px;
+    overflow: hidden;
+    position: absolute;
+    /*torna possivel alterar posição do container */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*para alterar o eixo*/
+
+}
+
+.navegação {
+
+    position: absolute;
+    /*posição em relação ao container*/
+    bottom: 20px;
+    /*distancia a partir da base */
+    left: 50%;
+    /*distancia a partir da esquerda */
+    transform: translate(-50%);
+    /*alterar o eixo principal*/
+    display: flex;
+    /* colocar o conteudo lado a lado*/
+    
+}
+
+.bar {
+    background-color: rgb(72, 71, 71);
+    width: 30px;
+    /*largura do indicador*/
+    height: 5px;
+    /* altura do indicador*/
+    margin: 6px;
+    /*espaço entre os indicadores*/
+    transition: .1s;
+    /*transição do hover*/
+    cursor: pointer;
+    /* ponteiro mouse*/
+}
+
+input {
+    display: none;
+}
+
+.imagens {
+    display: flex;
+    width: 600%;
+    height: 100%;
+}
+
+.imagem {
+    width: 16.6666666667%;
+    transition: .5s;
+
+}
+
+.imagem img {
+    width: 100%;
+    height: 100%;
+}
+
+#imagem1:checked~.img1 {
+    margin-left: 0%%;
+}
+
+#imagem2:checked~.img1 {
+    margin-left: -16.6666666667%;
+}
+
+#imagem3:checked~.img1 {
+    margin-left: -33.33333333%;
+}
+
+#imagem4:checked~.img1 {
+    margin-left: -50%;
+}
+
+#imagem5:checked~.img1 {
+    margin-left: -66.6666666667%;
+}
+
+#imagem6:checked~.img1 {
+    margin-left: -83.3333333333%;
+}
+
+h1 {
+    color: #ff0000;
+    text-align: center;
+    font-family: fonte1;
+    font-size: 2em;
+    background-color: #1a0101;
+    margin-top: 1em;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    color: #971515;
+    text-decoration: underline;
+    
+
+}
+
+P {
+    color: #f8000052;
+    text-decoration: line-through;
+    
+}
+
+.bar:hover {background-color: #c1baba;
+
+}
+
+.ha{
+    position: absolute;
+    color: #ff090949;
+    text-align: end;
+    margin-left: 70em;
+    margin-top: 10em;
+}
